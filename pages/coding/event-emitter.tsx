@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import { Prism } from "@mantine/prism";
 
 const eventEmitterCode = `// Subscribe -> needs to return a release function so subscriber no longer receives event

@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import { Prism } from "@mantine/prism";
 
 const flatRecursiveCode = `function flat(arr, depth = 1) {
