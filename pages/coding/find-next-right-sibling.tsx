@@ -57,7 +57,10 @@ const FindNextRightSibling: NextPage = () => {
         >
           {findNextRightSiblingRecursiveCode}
         </Prism.Tab>
-        <Prism.Tab label="flatIterative.js" language="javascript">
+        <Prism.Tab
+          label="findNextRightSiblingIterative.js"
+          language="javascript"
+        >
           {findNextRightSiblingIterativeCode}
         </Prism.Tab>
       </Prism.Tabs>
