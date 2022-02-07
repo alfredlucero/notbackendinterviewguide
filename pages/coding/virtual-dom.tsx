@@ -80,27 +80,27 @@ to this
 */
 // Recursive approach
 function render(obj) {
-// Base Cases
-// If the object is a string
-if (typeof obj === 'string') {
-  // Convert to textNode
-  return document.createTextNode(obj);
-// If the object is an element object
-} else {
-  const { type, props: { children, ...attributes } } = obj;
-  // Convert to elementNode
-  const element = document.createElement(type);
-  // Recursively render the children and append all the children to the parent elementNode
-  // Children could be a single child or within an array if multiple children, so we normalize it all into an array to loop through
-  const currentChildren = Array.isArray(children) ? children : [children];
-  currentChildren.forEach((currentChild) => element.append(render(currentChild)));
-  
-  // Add all the attributes to the parent elementNode
-  for (const [name, value] of Object.entries(attributes)) {
-    element.setAttribute(name === "className" ? "class" : name, value);
-  }
-  return element;
-} 
+  // Base Cases
+  // If the object is a string
+  if (typeof obj === 'string') {
+    // Convert to textNode
+    return document.createTextNode(obj);
+  // If the object is an element object
+  } else {
+    const { type, props: { children, ...attributes } } = obj;
+    // Convert to elementNode
+    const element = document.createElement(type);
+    // Recursively render the children and append all the children to the parent elementNode
+    // Children could be a single child or within an array if multiple children, so we normalize it all into an array to loop through
+    const currentChildren = Array.isArray(children) ? children : [children];
+    currentChildren.forEach((currentChild) => element.append(render(currentChild)));
+    
+    // Add all the attributes to the parent elementNode
+    for (const [name, value] of Object.entries(attributes)) {
+      element.setAttribute(name === "className" ? "class" : name, value);
+    }
+    return element;
+  } 
 }
 
 const div = document.createElement("div");
@@ -111,6 +111,81 @@ div.append("there");
 console.log("Div to virtualize", div.outerHTML);
 console.log("Virtualized div", virtualize(div));
 console.log("Rendered", render(virtualize(div)));`;
+
+const virtualDomIICode = `/**
+* @param { string } type - valid HTML tag name
+* @param { object } [props] - properties.
+* @param { ...MyNode} [children] - elements as rest arguments
+* @return { MyElement }
+*/
+function createElement(type, props, ...children) {
+ return {
+   type,
+   props: {
+     ...props,
+     children,
+   }
+ };
+}
+
+
+/**
+* @param { MyElement }
+* @returns { HTMLElement } 
+*/
+function render(myElement) {
+  // Base Cases
+  // If the object is a string
+  if (typeof myElement === 'string') {
+    // Convert to textNode
+    return document.createTextNode(myElement);
+  // If the object is an element object
+  } else {
+    const { type, props: { children, ...attributes } } = myElement;
+    // Convert to elementNode
+    const element = document.createElement(type);
+    // Recursively render the children and append all the children to the parent elementNode
+    // Children could be a single child or within an array if multiple children, so we normalize it all into an array to loop through
+    const currentChildren = Array.isArray(children) ? children : [children];
+    currentChildren.forEach((currentChild) => element.append(render(currentChild)));
+    
+    // Add all the attributes to the parent elementNode
+    for (const [name, value] of Object.entries(attributes)) {
+      element.setAttribute(name === "className" ? "class" : name, value);
+    }
+    return element;
+  }
+}`;
+
+const virtualDomIIICode = `/**
+* MyElement is the type your implementation supports
+*
+* type MyNode = MyElement | string
+* type FunctionComponent = (props: object) => MyElement
+*/
+
+/**
+* @param { string | FunctionComponent } type - valid HTML tag name or Function Component
+* @param { object } [props] - properties.
+* @param { ...MyNode} [children] - elements as rest arguments
+* @return { MyElement }
+*/
+function createElement(type, props, ...children) {
+  // Functional component like const Container = ({ children, ...res }) => h('div', res, ...children)
+  // We will call the function and pass through the props and children that will eventually return back the virtualized element
+  if (typeof type === "function") {
+    return type({ ...props, children })
+  }
+
+  // Normal create element without functional components will create the virtualized element with the props/children
+  return {
+    type, 
+    props: {
+      ...props,
+      children,
+    }
+  }
+}`;
 
 const VirtualDom: NextPage = () => {
   return (
@@ -123,6 +198,14 @@ const VirtualDom: NextPage = () => {
       <p>
         Source: https://bigfrontend.dev/problem/virtual-dom-II-createElement
       </p>
+      <Prism language="javascript">{virtualDomIICode}</Prism>
+
+      <h2>Virtual DOM III</h2>
+      <p>
+        Source:
+        https://bigfrontend.dev/problem/virtual-DOM-III-Functional-Component
+      </p>
+      <Prism language="javascript">{virtualDomIIICode}</Prism>
     </div>
   );
 };
