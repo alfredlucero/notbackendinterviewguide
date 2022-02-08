@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { AppShell, Navbar, Header } from "@mantine/core";
 import { Prism } from "@mantine/prism";
+import { Link } from "../components/Link";
+import { Code } from "@mantine/core";
 
 const demoCode = `import { Button } from '@mantine/core';
 
@@ -22,12 +24,14 @@ const Home: NextPage = () => {
         padding="md"
         navbar={
           <Navbar width={{ base: 300 }} height={500} padding="xs">
-            Nav
+            <Link href="/coding">Coding</Link>
+            <Link href="/css">CSS</Link>
+            <Link href="/system-design">System Design</Link>
           </Navbar>
         }
         header={
           <Header height={60} padding="xs">
-            Header
+            <Code>!backendInterviewGuide === frontendInterviewGuide</Code>
           </Header>
         }
       >
