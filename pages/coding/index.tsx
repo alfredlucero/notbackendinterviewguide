@@ -81,6 +81,10 @@ const codingLinks: CodingLink[] = [
     href: "/contains-duplicate",
     title: "Contains Duplicate",
   },
+  {
+    href: "/missing-number",
+    title: "Missing Number",
+  },
 ];
 
 const Coding: NextPage = () => {
