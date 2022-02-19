@@ -73,6 +73,10 @@ const codingLinks: CodingLink[] = [
     href: "/virtual-dom",
     title: "Virtual DOM",
   },
+  {
+    href: "/remove-k-digits",
+    title: "Remove K Digits",
+  },
 ];
 
 const Coding: NextPage = () => {
