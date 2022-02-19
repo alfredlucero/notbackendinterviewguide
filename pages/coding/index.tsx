@@ -77,6 +77,10 @@ const codingLinks: CodingLink[] = [
     href: "/remove-k-digits",
     title: "Remove K Digits",
   },
+  {
+    href: "/contains-duplicate",
+    title: "Contains Duplicate",
+  },
 ];
 
 const Coding: NextPage = () => {
