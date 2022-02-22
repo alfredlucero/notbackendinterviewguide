@@ -89,6 +89,10 @@ const codingLinks: CodingLink[] = [
     href: "/find-all-numbers-disappeared-in-an-array",
     title: "Find All Numbers Disappeared in an Array",
   },
+  {
+    href: "/single-number",
+    title: "Single Number",
+  },
 ];
 
 const Coding: NextPage = () => {
