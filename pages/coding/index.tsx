@@ -93,6 +93,10 @@ const codingLinks: CodingLink[] = [
     href: "/single-number",
     title: "Single Number",
   },
+  {
+    href: "/convert-1d-array-into-2d-array",
+    title: "Convert 1D Array into 2D Array",
+  },
 ];
 
 const Coding: NextPage = () => {
