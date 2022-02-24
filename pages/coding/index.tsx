@@ -97,6 +97,10 @@ const codingLinks: CodingLink[] = [
     href: "/convert-1d-array-into-2d-array",
     title: "Convert 1D Array into 2D Array",
   },
+  {
+    href: "/product-of-array-except-self",
+    title: "Product of Array Except Self",
+  },
 ];
 
 const Coding: NextPage = () => {
