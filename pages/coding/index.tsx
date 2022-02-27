@@ -101,6 +101,14 @@ const codingLinks: CodingLink[] = [
     href: "/product-of-array-except-self",
     title: "Product of Array Except Self",
   },
+  {
+    href: "/find-the-duplicate-number",
+    title: "Find the Duplicate Number",
+  },
+  {
+    href: "/find-all-duplicates-in-an-array",
+    title: "Find All Duplicates in an Array",
+  },
 ];
 
 const Coding: NextPage = () => {
