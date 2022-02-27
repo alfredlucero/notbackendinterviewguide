@@ -109,6 +109,10 @@ const codingLinks: CodingLink[] = [
     href: "/find-all-duplicates-in-an-array",
     title: "Find All Duplicates in an Array",
   },
+  {
+    href: "/set-matrix-zeroes",
+    title: "Set Matrix Zeroes",
+  },
 ];
 
 const Coding: NextPage = () => {
