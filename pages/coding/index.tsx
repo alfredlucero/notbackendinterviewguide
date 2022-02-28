@@ -117,6 +117,10 @@ const codingLinks: CodingLink[] = [
     href: "/spiral-matrix",
     title: "Spiral Matrix",
   },
+  {
+    href: "/data-fetching-histogram",
+    title: "Data Fetching Histogram",
+  },
 ];
 
 const Coding: NextPage = () => {
