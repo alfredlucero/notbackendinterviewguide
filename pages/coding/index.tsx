@@ -113,6 +113,10 @@ const codingLinks: CodingLink[] = [
     href: "/set-matrix-zeroes",
     title: "Set Matrix Zeroes",
   },
+  {
+    href: "/spiral-matrix",
+    title: "Spiral Matrix",
+  },
 ];
 
 const Coding: NextPage = () => {
