@@ -121,6 +121,10 @@ const codingLinks: CodingLink[] = [
     href: "/data-fetching-histogram",
     title: "Data Fetching Histogram",
   },
+  {
+    href: "/rotate-image",
+    title: "Rotate Image",
+  },
 ];
 
 const Coding: NextPage = () => {
