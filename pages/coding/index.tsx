@@ -125,6 +125,10 @@ const codingLinks: CodingLink[] = [
     href: "/rotate-image",
     title: "Rotate Image",
   },
+  {
+    href: "/longest-consecutive-sequence",
+    title: "Longest Consecutive Sequence",
+  },
 ];
 
 const Coding: NextPage = () => {
