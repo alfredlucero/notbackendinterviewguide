@@ -129,6 +129,10 @@ const codingLinks: CodingLink[] = [
     href: "/longest-consecutive-sequence",
     title: "Longest Consecutive Sequence",
   },
+  {
+    href: "/first-missing-positive",
+    title: "First Missing Positive",
+  },
 ];
 
 const Coding: NextPage = () => {
