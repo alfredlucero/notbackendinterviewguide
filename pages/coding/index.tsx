@@ -133,6 +133,10 @@ const codingLinks: CodingLink[] = [
     href: "/first-missing-positive",
     title: "First Missing Positive",
   },
+  {
+    href: "/climbing-stairs",
+    title: "Climbing Stairs",
+  },
 ];
 
 const Coding: NextPage = () => {
