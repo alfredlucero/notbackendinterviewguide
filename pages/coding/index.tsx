@@ -149,6 +149,10 @@ const codingLinks: CodingLink[] = [
     href: "/counting-bits",
     title: "Counting Bits",
   },
+  {
+    href: "/image-carousel",
+    title: "Image Carousel",
+  },
 ];
 
 const Coding: NextPage = () => {
