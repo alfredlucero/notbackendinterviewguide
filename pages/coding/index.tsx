@@ -137,6 +137,18 @@ const codingLinks: CodingLink[] = [
     href: "/climbing-stairs",
     title: "Climbing Stairs",
   },
+  {
+    href: "/maximum-subarray",
+    title: "Maximum Subarray",
+  },
+  {
+    href: "/range-sum-query-immutable",
+    title: "Range Sum Query - Immutable",
+  },
+  {
+    href: "/counting-bits",
+    title: "Counting Bits",
+  },
 ];
 
 const Coding: NextPage = () => {
