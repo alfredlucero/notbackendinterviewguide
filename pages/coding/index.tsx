@@ -153,6 +153,10 @@ const codingLinks: CodingLink[] = [
     href: "/image-carousel",
     title: "Image Carousel",
   },
+  {
+    href: "/snake",
+    title: "Snake",
+  },
 ];
 
 const Coding: NextPage = () => {
