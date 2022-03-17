@@ -157,6 +157,10 @@ const codingLinks: CodingLink[] = [
     href: "/snake",
     title: "Snake",
   },
+  {
+    href: "/modal-overlay",
+    title: "Modal Overlay",
+  },
 ];
 
 const Coding: NextPage = () => {
