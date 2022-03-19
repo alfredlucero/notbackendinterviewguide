@@ -161,6 +161,10 @@ const codingLinks: CodingLink[] = [
     href: "/modal-overlay",
     title: "Modal Overlay",
   },
+  {
+    href: "/target-sum",
+    title: "Target Sum",
+  },
 ];
 
 const Coding: NextPage = () => {
