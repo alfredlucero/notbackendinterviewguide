@@ -165,6 +165,10 @@ const codingLinks: CodingLink[] = [
     href: "/target-sum",
     title: "Target Sum",
   },
+  {
+    href: "/house-robber",
+    title: "House Robber",
+  },
 ];
 
 const Coding: NextPage = () => {
