@@ -7,43 +7,38 @@ const recursionMemoizedCode = `/**
 */
 /*
  Categorize: Knapsack 0/1, Recursion/Backtracking
- States: Keep track of the currentIndex (starting at 0) for the house and currentSum (starting at 0)
+ States: Keep track of the currentIndex (starting at 0) for the house and currentSum (starting at 0 and will be computed along the way)
  Decisions: Whether to rob the current house or skip the current house and rob the next house
- Base Case: After going through all the houses (currentIndex >= nums.length) return the currentSum; otherwise keep adding to currentSum with the current house or the next house
+ Base Case: After going through all the houses (currentIndex >= nums.length) return 0; otherwise, keep computing the max of robbing the current house or robbing the next house
  Implement: Recursion
- Optimize: Memoize max value given currentIndex and currentSum
- We make 2 choices at each step so it's O(2^n) time complexity without optimizations; may stack overflow due to recursion unless we optimize with memoization to bring it down to O(n) time and O(n) function space
+ Optimize: Memoize max value given currentIndex
+ We make 2 choices at each step so it's O(2^n) time complexity; may stack overflow due to recursion unless we optimize with memoization
+ Memoization cuts it down to O(n) time, O(n) function space
 */
 var rob = function(nums) {
- function recRob(currentIndex, currentSum) {
-   const memoIndex = \`$\{currentIndex\},$\{currentSum\}\`;
+ function recRob(currentIndex) {
    // If we've already computed this subproblem before, we will use that memoized value
-   if (memo.hasOwnProperty(memoIndex)) {
-     return memo[memoIndex];
+   if (memo.hasOwnProperty(currentIndex)) {
+     return memo[currentIndex];
    }
-   // If we've gone through all the houses, return the currentSum (total amount robbed)
+   // If we've gone through all the houses, return 0
    if (currentIndex >= nums.length) {
-     return currentSum;
+     return 0;
    }
    
    // Assuming we haven't gone through all the houses, recursively go through these steps
-   // Compute robbing the current house
-   const currentNum = nums[currentIndex];
-   const robCurrentHouse = recRob(currentIndex + 2, currentSum + currentNum);
-   // Compute robbing the next house and skip the current house instead
-   const robNextHouse = recRob(currentIndex + 1, currentSum);
-   
-   // Compute max from the 2 choices 
-   const max = Math.max(robCurrentHouse, robNextHouse);
+   // Compute max from the 2 choices: robbing the current house or robbing the next house
+   const currentNum = nums[currentIndex];    
+   const max = Math.max(recRob(currentIndex + 2) + currentNum, recRob(currentIndex + 1));
    
    // Store max in memo to avoid re-computing the same problem
-   memo[memoIndex] = max;
+   memo[currentIndex] = max;
  
    return max;
  }
  
  const memo = {};
- const maxRobbed = recRob(0, 0);
+ const maxRobbed = recRob(0);
  return maxRobbed;
 };`;
 
