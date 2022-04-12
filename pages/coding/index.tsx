@@ -169,6 +169,10 @@ const codingLinks: CodingLink[] = [
     href: "/house-robber",
     title: "House Robber",
   },
+  {
+    href: "/mortgage-calculator",
+    title: "Mortgage Calculator",
+  },
 ];
 
 const Coding: NextPage = () => {
