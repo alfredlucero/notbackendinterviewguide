@@ -86,6 +86,40 @@ var rob = function(nums) {
  return memo[nums.length - 1];
 };`;
 
+const iterativeHouseRobberTwoCode = `/**
+* @param {number[]} nums
+* @return {number}
+*/
+// Can reuse logic from House Robber I
+// Dynamic Programming: Keeping track of two variables i.e. rob1 (2 houses back), rob2 (1 house back) aka max robbed so far at a certain house
+// Initialize rob1 and rob2 with 0
+// Loop through each house value
+// Update rob2 with max of adding rob1 (2 houses back) + currentRob (current house) or skipping the current house (rob2)
+// Update rob1 with last rob2
+// For House Robber II we can reuse the House Robber I logic in a helper function and call it twice
+// We will take the max of skipping the first house or skipping the last house or the first house in the case we have only one house to go through
+// O(N) time
+var rob = function(nums) {
+ function robHelper(currentNums) {
+   let rob1 = 0;
+   let rob2 = 0;
+   currentNums.forEach((currentNum) => {
+     // Take the max of robbing the prior house and the current house or skipping the current house
+     const newRob2 = Math.max(rob1 + currentNum, rob2);
+     rob1 = rob2;
+     rob2 = newRob2;
+   });
+   return rob2;
+ }
+ 
+ if (nums.length === 1) {
+   return nums[0];
+ }
+ 
+ // Since the houses are in a circle, we take the max of skipping the first house or skipping the last house
+ return Math.max(robHelper(nums.slice(1)), robHelper(nums.slice(0, nums.length - 1)));
+};`;
+
 const HouseRobber: NextPage = () => {
   return (
     <div>
@@ -114,6 +148,18 @@ const HouseRobber: NextPage = () => {
           {iterativeBottomUpCode}
         </Prism.Tab>
       </Prism.Tabs>
+      <p>Source: https://leetcode.com/problems/house-robber-ii/</p>
+      <p>
+        You are a professional robber planning to rob houses along a street.
+        Each house has a certain amount of money stashed. All houses at this
+        place are arranged in a circle. That means the first house is the
+        neighbor of the last one. Meanwhile, adjacent houses have a security
+        system connected, and it will automatically contact the police if two
+        adjacent houses were broken into on the same night. Given an integer
+        array nums representing the amount of money of each house, return the
+        maximum amount of money you can rob tonight without alerting the police.
+      </p>
+      <Prism language="javascript">{iterativeHouseRobberTwoCode}</Prism>
     </div>
   );
 };
