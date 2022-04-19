@@ -173,6 +173,14 @@ const codingLinks: CodingLink[] = [
     href: "/mortgage-calculator",
     title: "Mortgage Calculator",
   },
+  {
+    href: "/trapping-rain-water",
+    title: "Trapping Rain Water",
+  },
+  {
+    href: "/coin-change",
+    title: "Coin Change",
+  },
 ];
 
 const Coding: NextPage = () => {
