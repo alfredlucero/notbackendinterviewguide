@@ -181,6 +181,10 @@ const codingLinks: CodingLink[] = [
     href: "/coin-change",
     title: "Coin Change",
   },
+  {
+    href: "/maximum-product-subarray",
+    title: "Maximum Product Subarray",
+  },
 ];
 
 const Coding: NextPage = () => {
