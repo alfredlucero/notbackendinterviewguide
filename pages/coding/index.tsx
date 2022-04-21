@@ -185,6 +185,10 @@ const codingLinks: CodingLink[] = [
     href: "/maximum-product-subarray",
     title: "Maximum Product Subarray",
   },
+  {
+    href: "/longest-increasing-subsequence",
+    title: "Longest Increasing Subsequence",
+  },
 ];
 
 const Coding: NextPage = () => {
