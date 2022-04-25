@@ -193,6 +193,10 @@ const codingLinks: CodingLink[] = [
     href: "/longest-palindromic-substring",
     title: "Longest Palindromic Substring",
   },
+  {
+    href: "/word-break",
+    title: "Word Break",
+  },
 ];
 
 const Coding: NextPage = () => {
