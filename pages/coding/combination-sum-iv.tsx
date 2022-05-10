@@ -90,7 +90,7 @@ const bottomUpDpCode = `/**
  Try and build up to the target sum with a dp array of size target + 1
  dp[target] will have total combinations  
  
- dp[i] = dp[i] (skipping current number) + dp[i - currentNum] (taking current number) as long as i >= n
+ dp[i] = dp[i] + dp[i - currentNum] as long as i >= n
  
  n = nums.length
  t = target
