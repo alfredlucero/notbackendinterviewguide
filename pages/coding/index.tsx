@@ -197,6 +197,10 @@ const codingLinks: CodingLink[] = [
     href: "/word-break",
     title: "Word Break",
   },
+  {
+    href: "/combination-sum-iv",
+    title: "Combination Sum IV",
+  },
 ];
 
 const Coding: NextPage = () => {
