@@ -201,6 +201,14 @@ const codingLinks: CodingLink[] = [
     href: "/combination-sum-iv",
     title: "Combination Sum IV",
   },
+  {
+    href: "/decode-ways",
+    title: "Decode Ways",
+  },
+  {
+    href: "/unique-paths",
+    title: "Unique Paths",
+  },
 ];
 
 const Coding: NextPage = () => {
