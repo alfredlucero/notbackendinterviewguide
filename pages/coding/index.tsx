@@ -209,6 +209,10 @@ const codingLinks: CodingLink[] = [
     href: "/unique-paths",
     title: "Unique Paths",
   },
+  {
+    href: "/number-of-longest-increasing-subsequence",
+    title: "Number of Longest Increasing Subsequence",
+  },
 ];
 
 const Coding: NextPage = () => {
