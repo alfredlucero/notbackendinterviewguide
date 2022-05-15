@@ -213,6 +213,10 @@ const codingLinks: CodingLink[] = [
     href: "/number-of-longest-increasing-subsequence",
     title: "Number of Longest Increasing Subsequence",
   },
+  {
+    href: "/palindromic-substrings",
+    title: "Palindromic Substrings",
+  },
 ];
 
 const Coding: NextPage = () => {
