@@ -217,6 +217,14 @@ const codingLinks: CodingLink[] = [
     href: "/palindromic-substrings",
     title: "Palindromic Substrings",
   },
+  {
+    href: "/jump-game",
+    title: "Jump Game",
+  },
+  {
+    href: "/partition-equal-subset-sum",
+    title: "Partition Equal Subset Sum",
+  },
 ];
 
 const Coding: NextPage = () => {
