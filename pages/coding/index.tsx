@@ -229,6 +229,10 @@ const codingLinks: CodingLink[] = [
     href: "/partition-to-k-equal-sum-subsets",
     title: "Partition to K Equal Sum Subsets",
   },
+  {
+    href: "/binary-search",
+    title: "Binary Search",
+  },
 ];
 
 const Coding: NextPage = () => {
