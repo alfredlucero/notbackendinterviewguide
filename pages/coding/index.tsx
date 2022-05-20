@@ -237,6 +237,10 @@ const codingLinks: CodingLink[] = [
     href: "/sqrtx",
     title: "sqrt(x)",
   },
+  {
+    href: "/peak-index-in-a-mountain-array",
+    title: "Peak Index in a Mountain Array",
+  },
 ];
 
 const Coding: NextPage = () => {
