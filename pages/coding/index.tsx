@@ -233,6 +233,10 @@ const codingLinks: CodingLink[] = [
     href: "/binary-search",
     title: "Binary Search",
   },
+  {
+    href: "/sqrtx",
+    title: "sqrt(x)",
+  },
 ];
 
 const Coding: NextPage = () => {
