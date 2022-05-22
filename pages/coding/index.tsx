@@ -241,6 +241,10 @@ const codingLinks: CodingLink[] = [
     href: "/peak-index-in-a-mountain-array",
     title: "Peak Index in a Mountain Array",
   },
+  {
+    href: "/find-peak-element",
+    title: "Find Peak Element",
+  },
 ];
 
 const Coding: NextPage = () => {
