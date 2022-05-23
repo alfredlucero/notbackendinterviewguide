@@ -245,6 +245,14 @@ const codingLinks: CodingLink[] = [
     href: "/find-peak-element",
     title: "Find Peak Element",
   },
+  {
+    href: "/find-minimum-in-rotated-sorted-array",
+    title: "Find Minimum in Rotated Sorted Array",
+  },
+  {
+    href: "/search-a-2d-matrix",
+    title: "Search a 2D Matrix",
+  },
 ];
 
 const Coding: NextPage = () => {
