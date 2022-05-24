@@ -253,6 +253,10 @@ const codingLinks: CodingLink[] = [
     href: "/search-a-2d-matrix",
     title: "Search a 2D Matrix",
   },
+  {
+    href: "/maximum-depth-of-binary-tree",
+    title: "Maximum Depth of Binary Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
