@@ -257,6 +257,10 @@ const codingLinks: CodingLink[] = [
     href: "/maximum-depth-of-binary-tree",
     title: "Maximum Depth of Binary Tree",
   },
+  {
+    href: "/same-tree",
+    title: "Same Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
