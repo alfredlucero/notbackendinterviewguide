@@ -261,6 +261,10 @@ const codingLinks: CodingLink[] = [
     href: "/same-tree",
     title: "Same Tree",
   },
+  {
+    href: "/diameter-of-binary-tree",
+    title: "Diameter of Binary Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
