@@ -8,36 +8,35 @@ const dfsCode = `/**
 *     this.left = this.right = null;
 * }
 */
-
 /**
 * @param {TreeNode} root
 * @param {TreeNode} p
 * @param {TreeNode} q
 * @return {TreeNode}
 */
-// O(H) time where H is height of tree, O(1) space
+// Time: O(N) where N is number of nodes in binary tree
+// Space: O(H) where H is the height of the binary tree
 var lowestCommonAncestor = function(root, p, q) {
- const large = Math.max(p.val, q.val);
- const small = Math.min(p.val, q.val);
+ if (root === null || root === p || root === q) {
+   return root;
+ }
+ // Check if p or q is in either left or right subtree
+ const foundNodeLeftSubtree = lowestCommonAncestor(root.left, p, q);
+ const foundNodeRightSubtree = lowestCommonAncestor(root.right, p, q);
  
- let current = root;
- while (current !== null) {
-   // If current root is greater than the larger node, the LCA must be in the left subtree
-   if (current.val > large) {
-     current = current.left;
-   // If current root is less than the smaller node, the LCA must be in the right subtree
-   } else if (current.val < small) {
-     current = current.right;
-   // small.val <= current.val <= large.val -> we found the LCA
-   } else {
-     return current;
-   }
- } 
- 
- return null;
+ // If we found p/q in both subtrees, we return the root as the LCA
+ if (foundNodeLeftSubtree !== null && foundNodeRightSubtree !== null) {
+   return root;
+ }
+ // If we found both p/q in the left subtree, we return the left node
+ if (foundNodeLeftSubtree) {
+   return foundNodeLeftSubtree;
+ }
+ // If we found both p/q in the right subtree, we return the right node
+ return foundNodeRightSubtree;
 };`;
 
-const LowestCommonAncestorBinarySearchTree: NextPage = () => {
+const LowestCommonAncestorBinaryTree: NextPage = () => {
   return (
     <div>
       <p>
@@ -60,4 +59,4 @@ const LowestCommonAncestorBinarySearchTree: NextPage = () => {
   );
 };
 
-export default LowestCommonAncestorBinarySearchTree;
+export default LowestCommonAncestorBinaryTree;

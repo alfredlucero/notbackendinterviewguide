@@ -265,6 +265,14 @@ const codingLinks: CodingLink[] = [
     href: "/diameter-of-binary-tree",
     title: "Diameter of Binary Tree",
   },
+  {
+    href: "/lowest-common-ancestor-of-a-binary-search-tree",
+    title: "Lowest Common Ancestor of a Binary Search Tree",
+  },
+  {
+    href: "/lowest-common-ancestor-of-a-binary-tree",
+    title: "Lowest Common Ancestor of a Binary Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
