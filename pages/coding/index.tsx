@@ -273,6 +273,10 @@ const codingLinks: CodingLink[] = [
     href: "/lowest-common-ancestor-of-a-binary-tree",
     title: "Lowest Common Ancestor of a Binary Tree",
   },
+  {
+    href: "/balanced-binary-tree",
+    title: "Balanced Binary Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
