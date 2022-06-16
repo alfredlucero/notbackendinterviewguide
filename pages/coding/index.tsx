@@ -281,6 +281,10 @@ const codingLinks: CodingLink[] = [
     href: "/longest-substring-with-at-most-two-distinct-characters",
     title: "Longest Substring with at Most Two Distinct Characters",
   },
+  {
+    href: "/validate-binary-search-tree",
+    title: "Validate Binary Search Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
