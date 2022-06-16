@@ -285,6 +285,10 @@ const codingLinks: CodingLink[] = [
     href: "/validate-binary-search-tree",
     title: "Validate Binary Search Tree",
   },
+  {
+    href: "/insert-into-a-binary-search-tree",
+    title: "Insert into a Binary Search Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
