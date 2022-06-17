@@ -293,6 +293,10 @@ const codingLinks: CodingLink[] = [
     href: "/permutations",
     title: "Permutations",
   },
+  {
+    href: "/path-sum",
+    title: "Path Sum",
+  },
 ];
 
 const Coding: NextPage = () => {
@@ -300,6 +304,7 @@ const Coding: NextPage = () => {
     <div>
       <h1>Coding</h1>
       <p>See all these frontend coding interview questions and solutions!</p>
+      <p>Total: {codingLinks.length}</p>
       <List size="lg" withPadding>
         {codingLinks.map((codingLink, key) => (
           <List.Item key={key}>
