@@ -289,6 +289,10 @@ const codingLinks: CodingLink[] = [
     href: "/insert-into-a-binary-search-tree",
     title: "Insert into a Binary Search Tree",
   },
+  {
+    href: "/permutations",
+    title: "Permutations",
+  },
 ];
 
 const Coding: NextPage = () => {
