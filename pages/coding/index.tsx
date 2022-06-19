@@ -301,6 +301,10 @@ const codingLinks: CodingLink[] = [
     href: "/path-sum-ii",
     title: "Path Sum II",
   },
+  {
+    href: "/path-sum-iii",
+    title: "Path Sum III",
+  },
 ];
 
 const Coding: NextPage = () => {
