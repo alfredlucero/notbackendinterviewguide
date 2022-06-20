@@ -313,6 +313,10 @@ const codingLinks: CodingLink[] = [
     href: "/course-schedule-ii",
     title: "Course Schedule II",
   },
+  {
+    href: "/clone-graph",
+    title: "Clone Graph",
+  },
 ];
 
 const Coding: NextPage = () => {
