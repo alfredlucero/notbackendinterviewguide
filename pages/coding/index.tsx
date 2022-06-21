@@ -321,6 +321,10 @@ const codingLinks: CodingLink[] = [
     href: "/pacific-atlantic-water-flow",
     title: "Pacific Atlantic Water Flow",
   },
+  {
+    href: "/graph-valid-tree",
+    title: "Graph Valid Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
