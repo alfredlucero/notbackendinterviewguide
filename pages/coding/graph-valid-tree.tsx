@@ -64,7 +64,7 @@ const bfsGraphTheoryCode = `/**
 * @return {boolean}
 */
 // BFS Graph Theory Approach
-// O(N + E) time/space
+// O(N) time/space
 var validTree = function(n, edges) {
  // If the number of edges does not equal n-1, it may not be connected or may contain cycles
  if (edges.length !== n - 1) {
@@ -116,6 +116,73 @@ var validTree = function(n, edges) {
  return seen.size === n;
 };`;
 
+const unionFindCode = `/**
+* @param {number} n
+* @param {number[][]} edges
+* @return {boolean}
+*/
+// Union Find Approach
+// O(alpha*N) time, O(N) space
+var validTree = function(n, edges) {
+ // If the number of edges does not equal n-1, it may not be connected or may contain cycles
+ if (edges.length !== n - 1) {
+   return false;
+ }
+ 
+ // Initialize UnionFind object with n nodes
+ const unionFind = new UnionFind(n);
+ 
+ // The graph must contain a single connected component so we loop through each edge and merge edges with union find
+ for (let i = 0; i < edges.length; i++) {
+   const edge = edges[i];
+   const A = edge[0];
+   const B = edge[1];
+   
+   // If a merge didn't happen, we encountered a cycle so we return false
+   if (!unionFind.union(A, B)) {
+     return false;
+   }
+ }
+ 
+ // We've merged successfully down to one connected component, return true as it's a valid tree
+ return true;
+};
+
+class UnionFind {
+ // Initializing all the sets at the same time rather than makeset function
+ constructor(n) {
+   this.parent = Array.from({ length: n }, () => 0);
+   for (let node = 0; node < n; node++) {
+     this.parent[node] = node;
+   }
+ }
+ 
+ // Trace up the parent links until it finds the root node for A and returns that root
+ find(A) {
+   while (this.parent[A] !== A) {
+     A = this.parent[A];
+   }
+   return A;
+ }
+ 
+ // Return true if a merge happened and false otherwise
+ union(A, B) {
+   // Find the root of A and root of B
+   let rootA = this.find(A);
+   let rootB = this.find(B);
+
+   // If A and B are already in the same set aka has the same root, return false as nothing to merge
+   if (rootA === rootB) {
+     return false;
+   }
+
+   // Merge the sets containing A and B and return true as a merge was successful
+   this.parent[rootA] = rootB;
+
+   return true;
+ }
+}`;
+
 const GraphValidTree: NextPage = () => {
   return (
     <div>
@@ -135,6 +202,10 @@ const GraphValidTree: NextPage = () => {
 
         <Prism.Tab label="bfsGraphTheory.js" language="javascript">
           {bfsGraphTheoryCode}
+        </Prism.Tab>
+
+        <Prism.Tab label="unionFind.js" language="javascript">
+          {unionFindCode}
         </Prism.Tab>
       </Prism.Tabs>
     </div>
