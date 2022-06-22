@@ -325,6 +325,10 @@ const codingLinks: CodingLink[] = [
     href: "/graph-valid-tree",
     title: "Graph Valid Tree",
   },
+  {
+    href: "/word-search",
+    title: "Word Search",
+  },
 ];
 
 const Coding: NextPage = () => {
