@@ -329,6 +329,10 @@ const codingLinks: CodingLink[] = [
     href: "/word-search",
     title: "Word Search",
   },
+  {
+    href: "/implement-trie-prefix-tree",
+    title: "Implement Trie Prefix Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
