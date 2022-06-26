@@ -330,6 +330,10 @@ const codingLinks: CodingLink[] = [
     title: "Word Search",
   },
   {
+    href: "/word-search-ii",
+    title: "Word Search II",
+  },
+  {
     href: "/implement-trie-prefix-tree",
     title: "Implement Trie Prefix Tree",
   },
