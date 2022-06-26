@@ -333,6 +333,10 @@ const codingLinks: CodingLink[] = [
     href: "/implement-trie-prefix-tree",
     title: "Implement Trie Prefix Tree",
   },
+  {
+    href: "/design-search-autocomplete-system",
+    title: "Design Search Autocomplete System",
+  },
 ];
 
 const Coding: NextPage = () => {
