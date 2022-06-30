@@ -341,6 +341,10 @@ const codingLinks: CodingLink[] = [
     href: "/design-search-autocomplete-system",
     title: "Design Search Autocomplete System",
   },
+  {
+    href: "/reverse-polish-notation",
+    title: "Reverse Polish Notation",
+  },
 ];
 
 const Coding: NextPage = () => {
