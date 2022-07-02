@@ -345,6 +345,14 @@ const codingLinks: CodingLink[] = [
     href: "/reverse-polish-notation",
     title: "Reverse Polish Notation",
   },
+  {
+    href: "/letter-combinations-of-a-phone-number",
+    title: "Letter Combinations of a Phone Number",
+  },
+  {
+    href: "/maximum-width-of-binary-tree",
+    title: "Maximum Width of Binary Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
