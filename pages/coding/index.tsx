@@ -353,6 +353,10 @@ const codingLinks: CodingLink[] = [
     href: "/maximum-width-of-binary-tree",
     title: "Maximum Width of Binary Tree",
   },
+  {
+    href: "/binary-tree-maximum-path-sum",
+    title: "Binary Tree Maximum Path Sum",
+  },
 ];
 
 const Coding: NextPage = () => {
