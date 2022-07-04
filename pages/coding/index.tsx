@@ -14,6 +14,10 @@ const codingLinks: CodingLink[] = [
     title: "Array.prototype.flat()",
   },
   {
+    href: "/two-sum",
+    title: "Two Sum",
+  },
+  {
     href: "/array-foreach",
     title: "Array.prototype.forEach()",
   },
