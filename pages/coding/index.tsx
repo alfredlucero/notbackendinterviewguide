@@ -18,6 +18,10 @@ const codingLinks: CodingLink[] = [
     title: "Two Sum",
   },
   {
+    href: "/valid-parentheses",
+    title: "Valid Parentheses",
+  },
+  {
     href: "/array-foreach",
     title: "Array.prototype.forEach()",
   },
