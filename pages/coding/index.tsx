@@ -10,16 +10,20 @@ interface CodingLink {
 const codingLinkBaseHref = "/coding";
 const codingLinks: CodingLink[] = [
   {
-    href: "/array-flat",
-    title: "Array.prototype.flat()",
-  },
-  {
     href: "/two-sum",
     title: "Two Sum",
   },
   {
     href: "/valid-parentheses",
     title: "Valid Parentheses",
+  },
+  {
+    href: "/merge-two-sorted-lists",
+    title: "Merge Two Sorted Lists",
+  },
+  {
+    href: "/array-flat",
+    title: "Array.prototype.flat()",
   },
   {
     href: "/array-foreach",
