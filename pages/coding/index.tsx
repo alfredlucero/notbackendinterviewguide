@@ -22,6 +22,10 @@ const codingLinks: CodingLink[] = [
     title: "Merge Two Sorted Lists",
   },
   {
+    href: "/best-time-to-buy-and-sell-stock",
+    title: "Best Time to Buy and Sell Stock",
+  },
+  {
     href: "/array-flat",
     title: "Array.prototype.flat()",
   },
