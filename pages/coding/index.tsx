@@ -30,6 +30,10 @@ const codingLinks: CodingLink[] = [
     title: "Valid Palindrome",
   },
   {
+    href: "/valid-anagram",
+    title: "Valid Anagram",
+  },
+  {
     href: "/array-flat",
     title: "Array.prototype.flat()",
   },
