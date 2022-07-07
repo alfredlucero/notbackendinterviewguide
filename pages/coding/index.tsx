@@ -26,6 +26,10 @@ const codingLinks: CodingLink[] = [
     title: "Best Time to Buy and Sell Stock",
   },
   {
+    href: "/valid-palindrome",
+    title: "Valid Palindrome",
+  },
+  {
     href: "/array-flat",
     title: "Array.prototype.flat()",
   },
