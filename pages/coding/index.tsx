@@ -34,6 +34,10 @@ const codingLinks: CodingLink[] = [
     title: "Valid Anagram",
   },
   {
+    href: "/3sum",
+    title: "3Sum",
+  },
+  {
     href: "/array-flat",
     title: "Array.prototype.flat()",
   },
