@@ -38,6 +38,14 @@ const codingLinks: CodingLink[] = [
     title: "3Sum",
   },
   {
+    href: "/random-pick-with-weight",
+    title: "Random Pick with Weight",
+  },
+  {
+    href: "/text-justification",
+    title: "Text Justification",
+  },
+  {
     href: "/array-flat",
     title: "Array.prototype.flat()",
   },
