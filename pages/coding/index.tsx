@@ -50,6 +50,10 @@ const codingLinks: CodingLink[] = [
     title: "Container With Most Water",
   },
   {
+    href: "/sliding-window-maximum",
+    title: "Sliding Window Maximum",
+  },
+  {
     href: "/array-flat",
     title: "Array.prototype.flat()",
   },
