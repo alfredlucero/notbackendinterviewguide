@@ -38,6 +38,70 @@ var trap = function(height) {
  return trappedRain;
 };`;
 
+const dpCode = `/**
+* @param {number[]} height
+* @return {number}
+*/
+// O(N) time, O(N) space
+var trap = function(height) {
+ // Find max height of bar from left end up to index i
+ const leftMax = Array.from({ length: height.length }, () => 0);
+ let currentLeftMax = -Infinity;
+ for (let left = 0; left < height.length; left++) {
+   currentLeftMax = Math.max(height[left], currentLeftMax);
+   leftMax[left] = currentLeftMax;
+ }
+ 
+ // Find max height of bar from right end up to index i
+ const rightMax = Array.from({ length: height.length }, () => 0);
+ let currentRightMax = -Infinity;
+ for (let right = height.length - 1; right >= 0; right--) {
+   currentRightMax = Math.max(height[right], currentRightMax);
+   rightMax[right] = currentRightMax;
+ }
+ 
+ // Loop from the second element to the second to last element and add the trapped rain water using the max heights of left and right up that index
+ let trappedRain = 0;
+ for (let i = 1; i < height.length - 1; i++) {
+   trappedRain += Math.min(leftMax[i], rightMax[i]) - height[i];
+ }
+ 
+ return trappedRain;
+};`;
+
+const twoPointersCode = `/**
+* @param {number[]} height
+* @return {number}
+*/
+// O(N) time, O(1) space
+var trap = function(height) {
+ // Two pointer approach
+ let left = 0;
+ let right = height.length - 1;
+ let leftMax = 0;
+ let rightMax = 0;
+ let trappedRain = 0;
+ while (left < right) {
+   if (height[left] < height[right]) {
+     if (height[left] >= leftMax) {
+       leftMax = height[left];
+     } else {
+       trappedRain += leftMax - height[left];
+     }
+     left++;
+   } else {
+     if (height[right] >= rightMax) {
+       rightMax = height[right];
+     } else {
+       trappedRain += rightMax - height[right];
+     }
+     right--;
+   }
+ }
+ 
+ return trappedRain;
+};`;
+
 const TrappingRainWater: NextPage = () => {
   return (
     <div>
@@ -50,6 +114,12 @@ const TrappingRainWater: NextPage = () => {
       <Prism.Tabs>
         <Prism.Tab label="bruteForceTrap.js" language="javascript">
           {bruteForceCode}
+        </Prism.Tab>
+        <Prism.Tab label="dp.js" language="javascript">
+          {dpCode}
+        </Prism.Tab>
+        <Prism.Tab label="twoPointers.js" language="javascript">
+          {twoPointersCode}
         </Prism.Tab>
       </Prism.Tabs>
     </div>
