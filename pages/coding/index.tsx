@@ -58,6 +58,10 @@ const codingLinks: CodingLink[] = [
     title: "Flood Fill",
   },
   {
+    href: "/linked-list-cycle",
+    title: "Linked List Cycle",
+  },
+  {
     href: "/array-flat",
     title: "Array.prototype.flat()",
   },
