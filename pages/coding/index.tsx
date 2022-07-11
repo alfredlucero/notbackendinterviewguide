@@ -54,6 +54,10 @@ const codingLinks: CodingLink[] = [
     title: "Sliding Window Maximum",
   },
   {
+    href: "/flood-fill",
+    title: "Flood Fill",
+  },
+  {
     href: "/array-flat",
     title: "Array.prototype.flat()",
   },
