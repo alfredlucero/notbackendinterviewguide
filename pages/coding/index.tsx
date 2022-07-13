@@ -413,6 +413,10 @@ const codingLinks: CodingLink[] = [
     href: "/subsets",
     title: "Subsets",
   },
+  {
+    href: "/find-leaves-of-binary-tree",
+    title: "Find Leaves of Binary Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
