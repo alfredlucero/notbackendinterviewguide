@@ -417,6 +417,10 @@ const codingLinks: CodingLink[] = [
     href: "/find-leaves-of-binary-tree",
     title: "Find Leaves of Binary Tree",
   },
+  {
+    href: "/find-duplicate-subtrees",
+    title: "Find Duplicate Subtrees",
+  },
 ];
 
 const Coding: NextPage = () => {
