@@ -66,6 +66,10 @@ const codingLinks: CodingLink[] = [
     title: "Minimum Window Substring",
   },
   {
+    href: "/longest-substring-without-repeating-characters",
+    title: "Longest Substring Without Repeating Characters",
+  },
+  {
     href: "/array-flat",
     title: "Array.prototype.flat()",
   },
