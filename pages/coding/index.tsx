@@ -441,6 +441,14 @@ const codingLinks: CodingLink[] = [
     href: "/combinations",
     title: "Combinations",
   },
+  {
+    href: "/combination-sum",
+    title: "Combination Sum",
+  },
+  {
+    href: "/combination-sum-ii",
+    title: "Combination Sum II",
+  },
 ];
 
 const Coding: NextPage = () => {
