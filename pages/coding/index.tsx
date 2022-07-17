@@ -469,6 +469,10 @@ const codingLinks: CodingLink[] = [
     href: "/generalized-abbreviation",
     title: "Generalized Abbreviation",
   },
+  {
+    href: "/sudoku-solver",
+    title: "Sudoku Solver",
+  },
 ];
 
 const Coding: NextPage = () => {
