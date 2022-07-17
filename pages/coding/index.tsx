@@ -453,6 +453,10 @@ const codingLinks: CodingLink[] = [
     href: "/combination-sum-iii",
     title: "Combination Sum III",
   },
+  {
+    href: "/palindrome-partitioning",
+    title: "Palindrome Partitioning",
+  },
 ];
 
 const Coding: NextPage = () => {
