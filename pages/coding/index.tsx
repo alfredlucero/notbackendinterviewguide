@@ -461,6 +461,14 @@ const codingLinks: CodingLink[] = [
     href: "/strobogrammatic-number-ii",
     title: "Strobogrammatic Number II",
   },
+  {
+    href: "/generate-parentheses",
+    title: "Generate Parentheses",
+  },
+  {
+    href: "/generalized-abbreviation",
+    title: "Generalized Abbreviation",
+  },
 ];
 
 const Coding: NextPage = () => {
