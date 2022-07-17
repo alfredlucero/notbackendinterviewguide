@@ -70,6 +70,14 @@ const codingLinks: CodingLink[] = [
     title: "Longest Substring Without Repeating Characters",
   },
   {
+    href: "/reverse-linked-list",
+    title: "Reverse Linked List",
+  },
+  {
+    href: "/middle-of-the-linked-list",
+    title: "Middle of the Linked List",
+  },
+  {
     href: "/array-flat",
     title: "Array.prototype.flat()",
   },
