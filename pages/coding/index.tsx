@@ -449,6 +449,10 @@ const codingLinks: CodingLink[] = [
     href: "/combination-sum-ii",
     title: "Combination Sum II",
   },
+  {
+    href: "/combination-sum-iii",
+    title: "Combination Sum III",
+  },
 ];
 
 const Coding: NextPage = () => {
