@@ -473,6 +473,10 @@ const codingLinks: CodingLink[] = [
     href: "/sudoku-solver",
     title: "Sudoku Solver",
   },
+  {
+    href: "/meeting-rooms",
+    title: "Meeting Rooms",
+  },
 ];
 
 const Coding: NextPage = () => {
