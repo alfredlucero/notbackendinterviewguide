@@ -457,6 +457,10 @@ const codingLinks: CodingLink[] = [
     href: "/palindrome-partitioning",
     title: "Palindrome Partitioning",
   },
+  {
+    href: "/strobogrammatic-number-ii",
+    title: "Strobogrammatic Number II",
+  },
 ];
 
 const Coding: NextPage = () => {
