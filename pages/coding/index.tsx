@@ -437,6 +437,10 @@ const codingLinks: CodingLink[] = [
     href: "/find-duplicate-subtrees",
     title: "Find Duplicate Subtrees",
   },
+  {
+    href: "/combinations",
+    title: "Combinations",
+  },
 ];
 
 const Coding: NextPage = () => {
