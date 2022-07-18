@@ -477,6 +477,10 @@ const codingLinks: CodingLink[] = [
     href: "/meeting-rooms",
     title: "Meeting Rooms",
   },
+  {
+    href: "/meeting-rooms-ii",
+    title: "Meeting Rooms II",
+  },
 ];
 
 const Coding: NextPage = () => {
