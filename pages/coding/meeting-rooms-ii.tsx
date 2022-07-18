@@ -1,6 +1,66 @@
 import type { NextPage } from "next";
 import { Prism } from "@mantine/prism";
 
+const minHeapCode = `/**
+* @param {number[][]} intervals
+* @return {number}
+*/
+// MinHeap Approach
+// O(NlogN) time, O(N) space
+var minMeetingRooms = function(intervals) {
+ // We'll keep track of the minimum end times of meetings
+ const minHeap = new Heap((a,b) => a - b);
+ 
+ // Sort the intervals by start time
+ intervals.sort((a,b) => a[0] - b[0]);
+ 
+ // Add the first meeting end time to the min heap
+ minHeap.insert(intervals[0][1]);
+ 
+
+ for (let i = 1; i < intervals.length; i++) {
+   const [startTime, endTime] = intervals[i];
+   // If there is a free room to start a meeting where the start time is greater than the end time of the last earliest meeting that finished, we can remove that room from the minheap
+   if (minHeap.size > 0 && minHeap.peek() <= startTime) {
+     minHeap.extract();
+   }
+   
+   // Push a new room onto the min heap based on the current interval's end time 
+   minHeap.insert(endTime);
+ }
+ 
+ // The minimum number of meeting rooms required is equal to the min heap size at the end
+ return minHeap.size;
+};
+
+
+class Heap {
+ constructor(compareFunc) {
+   this.compareFunc = compareFunc;
+   this.heap = [];
+ }
+ 
+ insert(value) {
+   this.heap.unshift(value);
+   this.heap.sort(this.compareFunc);
+ }
+ 
+ extract() {
+   if (this.size === 0) return null;
+   return this.heap.shift();
+ }
+ 
+ peek() {
+   if (this.size === 0) return null;
+   return this.heap[0];
+ }
+ 
+ get size() {
+   return this.heap.length;
+ }
+}
+`;
+
 const chronoSortCode = `/**
 * @param {number[][]} intervals
 * @return {number}
@@ -47,6 +107,9 @@ const MeetingRoomsII: NextPage = () => {
       <Prism.Tabs>
         <Prism.Tab label="chronoSort.js" language="javascript">
           {chronoSortCode}
+        </Prism.Tab>
+        <Prism.Tab label="minHeap.js" language="javascript">
+          {minHeapCode}
         </Prism.Tab>
       </Prism.Tabs>
     </div>
