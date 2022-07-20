@@ -485,6 +485,10 @@ const codingLinks: CodingLink[] = [
     href: "/binary-tree-level-order-traversal",
     title: "Binary Tree Level Order Traversal",
   },
+  {
+    href: "/binary-tree-zigzag-level-order-traversal",
+    title: "Binary Tree Zigzag Level Order Traversal",
+  },
 ];
 
 const Coding: NextPage = () => {
