@@ -489,6 +489,10 @@ const codingLinks: CodingLink[] = [
     href: "/binary-tree-zigzag-level-order-traversal",
     title: "Binary Tree Zigzag Level Order Traversal",
   },
+  {
+    href: "/kth-smallest-element-in-a-sorted-matrix",
+    title: "Kth Smallest Element in a Sorted Matrix",
+  },
 ];
 
 const Coding: NextPage = () => {
