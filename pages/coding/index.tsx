@@ -493,6 +493,10 @@ const codingLinks: CodingLink[] = [
     href: "/kth-smallest-element-in-a-sorted-matrix",
     title: "Kth Smallest Element in a Sorted Matrix",
   },
+  {
+    href: "/kth-largest-element-in-an-array",
+    title: "Kth Largest Element in an Array",
+  },
 ];
 
 const Coding: NextPage = () => {
