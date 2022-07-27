@@ -497,6 +497,10 @@ const codingLinks: CodingLink[] = [
     href: "/kth-largest-element-in-an-array",
     title: "Kth Largest Element in an Array",
   },
+  {
+    href: "/median-of-two-sorted-arrays",
+    title: "Median of Two Sorted Arrays",
+  },
 ];
 
 const Coding: NextPage = () => {
