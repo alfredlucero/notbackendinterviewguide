@@ -501,6 +501,10 @@ const codingLinks: CodingLink[] = [
     href: "/median-of-two-sorted-arrays",
     title: "Median of Two Sorted Arrays",
   },
+  {
+    href: "/insert-interval",
+    title: "Insert Interval",
+  },
 ];
 
 const Coding: NextPage = () => {
