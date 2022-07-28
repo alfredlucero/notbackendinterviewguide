@@ -505,6 +505,10 @@ const codingLinks: CodingLink[] = [
     href: "/insert-interval",
     title: "Insert Interval",
   },
+  {
+    href: "/01-matrix",
+    title: "01 Matrix",
+  },
 ];
 
 const Coding: NextPage = () => {
