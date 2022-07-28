@@ -506,6 +506,11 @@ const codingLinks: CodingLink[] = [
     title: "Insert Interval",
   },
   {
+    href: "/merge-intervals",
+    title: "Merge Intervals",
+  },
+  // Add Range Module one here
+  {
     href: "/01-matrix",
     title: "01 Matrix",
   },
