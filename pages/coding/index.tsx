@@ -522,6 +522,10 @@ const codingLinks: CodingLink[] = [
     href: "/shortest-path-in-a-grid-with-obstacles-elimination",
     title: "Shortest Path in a Grid with Obstacles Elimination",
   },
+  {
+    href: "/remove-nth-node-from-end-of-list",
+    title: "Remove nth Node from End of List",
+  },
 ];
 
 const Coding: NextPage = () => {
