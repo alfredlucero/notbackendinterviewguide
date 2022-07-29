@@ -22,6 +22,10 @@ const codingLinks: CodingLink[] = [
     title: "Merge Two Sorted Lists",
   },
   {
+    href: "/merge-k-sorted-lists",
+    title: "Merge K Sorted Lists",
+  },
+  {
     href: "/best-time-to-buy-and-sell-stock",
     title: "Best Time to Buy and Sell Stock",
   },
@@ -513,6 +517,10 @@ const codingLinks: CodingLink[] = [
   {
     href: "/01-matrix",
     title: "01 Matrix",
+  },
+  {
+    href: "/shortest-path-in-a-grid-with-obstacles-elimination",
+    title: "Shortest Path in a Grid with Obstacles Elimination",
   },
 ];
 
