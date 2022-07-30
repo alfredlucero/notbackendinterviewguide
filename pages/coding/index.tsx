@@ -526,6 +526,10 @@ const codingLinks: CodingLink[] = [
     href: "/remove-nth-node-from-end-of-list",
     title: "Remove nth Node from End of List",
   },
+  {
+    href: "/alien-dictionary",
+    title: "Alien Dictionary",
+  },
 ];
 
 const Coding: NextPage = () => {
