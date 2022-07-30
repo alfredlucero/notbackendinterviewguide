@@ -530,6 +530,10 @@ const codingLinks: CodingLink[] = [
     href: "/alien-dictionary",
     title: "Alien Dictionary",
   },
+  {
+    href: "/build-text-file-folder-structure-ui",
+    title: "Build Text File Folder Structure UI",
+  },
 ];
 
 const Coding: NextPage = () => {
