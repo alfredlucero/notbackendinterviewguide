@@ -542,6 +542,14 @@ const codingLinks: CodingLink[] = [
     href: "/design-hit-counter",
     title: "Design Hit Counter",
   },
+  {
+    href: "/race-car",
+    title: "Race Car",
+  },
+  {
+    href: "Longest Increasing Path in a Matrix",
+    title: "Longest Increasing Path in a Matrix",
+  },
 ];
 
 const Coding: NextPage = () => {
