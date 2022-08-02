@@ -534,6 +534,14 @@ const codingLinks: CodingLink[] = [
     href: "/build-text-file-folder-structure-ui",
     title: "Build Text File Folder Structure UI",
   },
+  {
+    href: "/logger-rate-limiter",
+    title: "Logger Rate Limiter",
+  },
+  {
+    href: "/design-hit-counter",
+    title: "Design Hit Counter",
+  },
 ];
 
 const Coding: NextPage = () => {
