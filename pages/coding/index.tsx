@@ -554,6 +554,10 @@ const codingLinks: CodingLink[] = [
     href: "/find-median-from-data-stream",
     title: "Find Median from Data Stream",
   },
+  {
+    href: "/step-by-step-directions-from-a-binary-tree-node-to-another",
+    title: "Step by Step Directions from a Binary Tree Node to Another",
+  },
 ];
 
 const Coding: NextPage = () => {
