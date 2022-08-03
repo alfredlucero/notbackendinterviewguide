@@ -547,8 +547,12 @@ const codingLinks: CodingLink[] = [
     title: "Race Car",
   },
   {
-    href: "Longest Increasing Path in a Matrix",
+    href: "/longest-increasing-path-in-a-matrix",
     title: "Longest Increasing Path in a Matrix",
+  },
+  {
+    href: "/find-median-from-data-stream",
+    title: "Find Median from Data Stream",
   },
 ];
 
