@@ -558,6 +558,10 @@ const codingLinks: CodingLink[] = [
     href: "/step-by-step-directions-from-a-binary-tree-node-to-another",
     title: "Step by Step Directions from a Binary Tree Node to Another",
   },
+  {
+    href: "/employee-free-time",
+    title: "Employee Free Time",
+  },
 ];
 
 const Coding: NextPage = () => {
