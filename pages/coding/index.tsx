@@ -562,6 +562,10 @@ const codingLinks: CodingLink[] = [
     href: "/employee-free-time",
     title: "Employee Free Time",
   },
+  {
+    href: "/robot-room-cleaner",
+    title: "Robot Room Cleaner",
+  },
 ];
 
 const Coding: NextPage = () => {
