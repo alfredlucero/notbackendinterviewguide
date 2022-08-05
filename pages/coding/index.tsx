@@ -566,6 +566,10 @@ const codingLinks: CodingLink[] = [
     href: "/robot-room-cleaner",
     title: "Robot Room Cleaner",
   },
+  {
+    href: "/battleships-in-a-board",
+    title: "Battleships in a Board",
+  },
 ];
 
 const Coding: NextPage = () => {
