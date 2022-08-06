@@ -578,6 +578,10 @@ const codingLinks: CodingLink[] = [
     href: "/construct-binary-tree-from-preorder-and-inorder-traversal",
     title: "Construct Binary Tree from Preorder and Inorder Traversal",
   },
+  {
+    href: "/convert-sorted-array-to-binary-search-tree",
+    title: "Convert Sorted Array to Binary Search Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
