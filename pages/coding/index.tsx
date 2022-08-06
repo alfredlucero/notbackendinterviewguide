@@ -574,6 +574,10 @@ const codingLinks: CodingLink[] = [
     href: "/subtree-of-another-tree",
     title: "Subtree of Another Tree",
   },
+  {
+    href: "/construct-binary-tree-from-preorder-and-inorder-traversal",
+    title: "Construct Binary Tree from Preorder and Inorder Traversal",
+  },
 ];
 
 const Coding: NextPage = () => {
