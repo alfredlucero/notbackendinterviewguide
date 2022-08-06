@@ -570,6 +570,10 @@ const codingLinks: CodingLink[] = [
     href: "/battleships-in-a-board",
     title: "Battleships in a Board",
   },
+  {
+    href: "/subtree-of-another-tree",
+    title: "Subtree of Another Tree",
+  },
 ];
 
 const Coding: NextPage = () => {
