@@ -582,6 +582,10 @@ const codingLinks: CodingLink[] = [
     href: "/convert-sorted-array-to-binary-search-tree",
     title: "Convert Sorted Array to Binary Search Tree",
   },
+  {
+    href: "/task-scheduler",
+    title: "Task Scheduler",
+  },
 ];
 
 const Coding: NextPage = () => {
