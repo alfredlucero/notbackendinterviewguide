@@ -594,6 +594,10 @@ const codingLinks: CodingLink[] = [
     href: "/rotting-oranges",
     title: "Rotting Oranges",
   },
+  {
+    href: "/longest-string-chain",
+    title: "Longest String Chain",
+  },
 ];
 
 const Coding: NextPage = () => {
