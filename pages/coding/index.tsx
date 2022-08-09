@@ -602,6 +602,10 @@ const codingLinks: CodingLink[] = [
     href: "/minimum-size-subarray-sum",
     title: "Minimum Size Subarray Sum",
   },
+  {
+    href: "/permutation-in-string",
+    title: "Permutation in String",
+  },
 ];
 
 const Coding: NextPage = () => {
