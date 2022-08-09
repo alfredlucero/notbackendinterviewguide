@@ -598,6 +598,10 @@ const codingLinks: CodingLink[] = [
     href: "/longest-string-chain",
     title: "Longest String Chain",
   },
+  {
+    href: "/minimum-size-subarray-sum",
+    title: "Minimum Size Subarray Sum",
+  },
 ];
 
 const Coding: NextPage = () => {
