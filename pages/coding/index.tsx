@@ -606,6 +606,10 @@ const codingLinks: CodingLink[] = [
     href: "/permutation-in-string",
     title: "Permutation in String",
   },
+  {
+    href: "/decode-string",
+    title: "Decode String",
+  },
 ];
 
 const Coding: NextPage = () => {
