@@ -610,6 +610,10 @@ const codingLinks: CodingLink[] = [
     href: "/decode-string",
     title: "Decode String",
   },
+  {
+    href: "/time-based-key-value-store",
+    title: "Time Based Key Value Store",
+  },
 ];
 
 const Coding: NextPage = () => {
