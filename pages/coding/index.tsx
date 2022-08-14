@@ -614,6 +614,10 @@ const codingLinks: CodingLink[] = [
     href: "/time-based-key-value-store",
     title: "Time Based Key Value Store",
   },
+  {
+    href: "/accounts-merge",
+    title: "Accounts Merge",
+  },
 ];
 
 const Coding: NextPage = () => {
