@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { Prism } from "@mantine/prism";
 
-const containsDuplicateCode = `/**
+const containsDuplicateJsCode = `/**
 * @param {number[]} nums
 * @return {boolean}
 */
@@ -32,15 +32,71 @@ var containsDuplicate = function(nums) {
  return false;
 };`;
 
+const containsDuplicateJavaCode = `class Solution {
+  // O(N) time, O(N) space
+  public boolean containsDuplicate(int[] nums) {
+    // Initialize a set to keep track of numbers seen before
+    Set<Integer> set = new HashSet<Integer>();
+    
+    // Loop through each number in nums
+    for (int i = 0; i < nums.length; i++) {
+      // If the number already exists in the set, we found a duplicate so return true
+      if (set.contains(nums[i])) {
+        return true;
+      }
+      
+      // Add the new number to the set
+      set.add(nums[i]);
+    }
+    
+    // We went through all the numbers and didn't find a duplicate so return false
+    return false;
+  }
+}`;
+
+const containsDuplicateCppCode = `class Solution {
+  public:
+      // O(N) time, O(N) space
+      bool containsDuplicate(vector<int>& nums) {
+        // Initialize an unordered set to keep track of numbers seen before
+        unordered_set<int> set;
+        
+        // Loop through each number in nums
+        for (int i = 0; i < nums.size(); i++) {
+          // If the number already exists in the set, return true
+          if (set.find(nums[i]) != set.end()) {
+            return true;
+          }
+          
+          // Add the new number to the set
+          set.insert(nums[i]);
+        }
+        
+        // We've gone through all the numbers and didn't find a duplicate, so return false
+        return false;
+      }
+  };`;
+
 const ContainsDuplicate: NextPage = () => {
   return (
     <div>
+      {/* NC150 */}
       <p>Source: https://leetcode.com/problems/contains-duplicate/</p>
       <p>
         Given an integer array nums, return true if any value appears at least
         twice in the array, and return false if every element is distinct.
       </p>
-      <Prism language="javascript">{containsDuplicateCode}</Prism>
+      <Prism.Tabs>
+        <Prism.Tab label="twoPointers.js" language="javascript">
+          {containsDuplicateJsCode}
+        </Prism.Tab>
+        <Prism.Tab label="twoPointers.cpp" language="cpp">
+          {containsDuplicateCppCode}
+        </Prism.Tab>
+        <Prism.Tab label="twoPointers.java" language="diff">
+          {containsDuplicateJavaCode}
+        </Prism.Tab>
+      </Prism.Tabs>
     </div>
   );
 };
